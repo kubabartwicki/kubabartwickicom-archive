@@ -1,0 +1,93 @@
+/* Reset and .clearfix
+------------------------------------------------------------------------------*/
+abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,dialog,div,dl,dt,em,embed,fieldset,figcaption,figure,font,form,h1,h2,h3,h4,h5,h6,hgroup,hr,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,meter,nav,object,ol,output,p,pre,progress,q,rp,rt,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video,xmp{border:0;margin:0;padding:0;list-style-type: none;
+}html,body{height:100%}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}b,strong{font-weight:bold}img{font-size:0;vertical-align:middle;-ms-interpolation-mode:bicubic}li{display:list-item}table{border-collapse:collapse;border-spacing:0}th,td,caption{font-weight:normal;vertical-align:top;text-align:left}svg{overflow:hidden}
+
+
+/* Default Styles
+------------------------------------------------------------------------------*/
+
+body { 
+	background: #fff; 
+	color: #000; 
+	font: 16px Geneva, Verdana, sans-serif; 
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}
+.wrapper {
+	width: 100%;
+	margin: 0 auto;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+a:hover {
+	text-decoration: underline;
+}
+img {
+	max-width: 100%;
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 1024px) {
+     html {
+        -webkit-text-size-adjust: none;
+     }
+}
+
+
+/* index
+------------------------------------------------------------------------------*/
+
+h1, h2 {
+	text-transform: uppercase;
+	font-size: 2em;
+	font-family: 'Franklin Gothic', 'Helvetica Neue', Arial, sans-serif;
+	font-weight: bold;
+}
+h2 {
+	font-size: 1.5em;
+	font-family: Geneva, Verdana, sans-serif;
+}
+h2 a {
+	background: red;
+	color: #fff;
+	padding: 5px 10px;
+	font-size: 0.7em;
+	position: relative;
+	top: -3px;
+	margin-left: 10px;
+}
+h1, h2, p {
+	padding: 10px 0 0 0;
+	max-width: 420px;
+	margin: 0 auto;
+}
+h2 {
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+h1 {
+	padding-bottom: 20px;
+}
+section {
+	padding: 20px 20px 30px 30px;
+	position: static;
+	top: 30px;
+	left: 30px;
+	background: #fff;
+}
+p.back a {
+	text-transform: uppercase;
+	font-size: 0.8em;
+	letter-spacing: 0.5px;
+}
+
+
+/* let's get big ------------------------------------------------------------------------------*/
+
+@media screen and (min-width:600px) {
+	section {
+		position: absolute;
+	}
+}
