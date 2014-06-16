@@ -8,22 +8,20 @@ var Site = {
 	home: function() {
 
 		// work in progress
-		emojify.run()
+		emojify.run();
 
 		$('.work-item a').click(function(e) {
 			e.preventDefault();
 		});
-		
-		$('.ok').click(function(e) {
-			e.preventDefault();
+
+		setInterval(function() {
 			if ( $('.work-item.active').next().is('article') ) {
 				$('.work-item.active').removeClass('active').next().addClass('active');	
 			} else {
 				$('.work-item.active').removeClass('active');
-				$('.ok').remove();
+				$('.work-item:nth-child(1)').addClass('active');
 			}
-		});
-
+		}, 200);
 	}
 }
 
