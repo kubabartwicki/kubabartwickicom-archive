@@ -147,10 +147,12 @@ h2 {
 .project-items .wrapper {
 	margin: 0 auto;
 	max-width: 450px;
+	padding-bottom: 60px;
 }
 .project-items li {
 	margin-bottom: 20px;
 	font-size: 1.7em;
+	padding: 10px;
 }
 .project-items .project-intro p {
 	margin-bottom: 1em;
