@@ -49,13 +49,17 @@ main .wrapper {
 }
 h1 {
 	font-size: 2.5em;
-	margin: 40px 0;
+	margin: 40px auto;
 	text-align: center;
+	max-width: 800px;
 }
 @media (min-width: 650px) {
 	h1 {
 		font-size: 4em;
 	}
+}
+h1 a:hover {
+	text-decoration: none;
 }
 h2 a {
 	color: blue;
@@ -109,7 +113,7 @@ h2 {
 	display: none;
 }
 .work-item a {
-	cursor: default;
+	
 }
 .work-item.active {
 	display: block;
@@ -138,53 +142,22 @@ h2 {
 
 /* footer */
 
-footer {
-	display: none;
-}
 
-/* work-item */
-
-body.work-item .wrapper {
-	max-width: 600px;
-}
-body.work-item main {
-	margin: 40px 0 20px 0;
-	position: static;
-	display: block;
-}
-body.work-item .wrapper-big {
-	max-width: 1200px;
+/* project */
+.project-items .wrapper {
 	margin: 0 auto;
+	max-width: 450px;
 }
-body.work-item article {
-	position: relative;
-	z-index: 1;
-}
-body.work-item article section {
-	background: #fff;
-	padding: 10px;
-	max-width: 580px !important;
-	margin: 0 auto;
-}
-body.work-item ul {
-	max-width: 950px;
-	float: right;
-}
-body.work-item ul li {
+.project-items li {
 	margin-bottom: 20px;
+	font-size: 1.7em;
 }
-body.work-item footer ul, body.work-item footer ul li {
-	position: static !important;
+.project-items .project-intro p {
+	margin-bottom: 1em;
 }
-body.work-item footer ul {
-	margin: 50px 0;
+.project-items .project-intro {
+	margin-bottom: 60px;
 }
-
-
-/* let's get big ------------------------------------------------------------------------------*/
-
-@media screen and (min-width:630px) {
-	body.work main {
-		margin-bottom: 0;
-	}
+.project-items .project-intro a {
+	color: blue;
 }
